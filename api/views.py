@@ -185,7 +185,8 @@ class FlightList(generics.GenericAPIView,mixins.ListModelMixin,mixins.RetrieveMo
     queryset = Flight.objects.all()
 
     def get(self, request, pk=None):
-        if id:
+        if pk:
+            print("jhdfsadasd")
             # flight = FlightSerializer.objects.get(id=id)
             # serializer = FlightSerializer(flight)
             # return Response(serializer.data)
