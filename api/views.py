@@ -375,7 +375,7 @@ class Book(generics.GenericAPIView,mixins.ListModelMixin,mixins.RetrieveModelMix
     # lookup_field = 'id'
 
     def get(self, request, pk=None):
-        if id:
+        if pk:
             return self.retrieve(request)
         else:
             return self.list(request)
